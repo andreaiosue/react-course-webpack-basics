@@ -16,4 +16,4 @@ npm run-script build
 npm run-script start
 ```
 
-Navigate to [http://localhost:8080/webpack-dev-server/index.html](http://localhost:8080/webpack-dev-server/index.html)http://localhost:8080/webpack-dev-server/index.html
+Navigate to [http://localhost:8080/webpack-dev-server/index.html](http://localhost:8080/webpack-dev-server/index.html)
