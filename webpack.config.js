@@ -18,5 +18,10 @@ module.exports = {
         path: path.join(__dirname, '/public/dist/'),
         filename: 'bundle.js',
         publicPath: '/dist/'
+    },
+    resolve: {
+        alias: {
+            MyModule: path.join(__dirname, '/public/js/folder/module.jsx')
+        }
     }
 };
