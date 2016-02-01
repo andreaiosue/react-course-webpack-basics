@@ -44,16 +44,28 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var someModule = __webpack_require__(1);
+	'use strict';
 
-	console.log('app.js');
-	someModule();
+	var _MyModule = __webpack_require__(1);
+
+	var _MyModule2 = _interopRequireDefault(_MyModule);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	console.log('Log from app.jsx'); //var someModule = require('./folder/module.jsx');
+	//import someModule from "./folder/module.jsx";
+
+	(0, _MyModule2.default)();
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	module.exports = function (message = "Module code") {
+	"use strict";
+
+	module.exports = function () {
+	    var message = arguments.length <= 0 || arguments[0] === undefined ? "Log from module.jsx using es6 default arguments" : arguments[0];
+
 	    console.log(message);
 	};
 

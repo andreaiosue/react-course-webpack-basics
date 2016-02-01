@@ -20,8 +20,10 @@ module.exports = {
         publicPath: '/dist/'
     },
     resolve: {
+        root: path.join(__dirname, '/public/js/'),
         alias: {
-            MyModule: path.join(__dirname, '/public/js/folder/module.jsx')
-        }
+            myModule: './folder/module.jsx'
+        },
+        extensions: ['', '.js', '.jsx']
     }
 };
